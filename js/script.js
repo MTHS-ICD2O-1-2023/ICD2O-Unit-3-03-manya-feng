@@ -14,8 +14,8 @@ function calculateVolumeOfSphere() {
   const radiusOfSphere = parseFloat(document.getElementById("radius-of-sphere").value)
 
   // process
-  const volumeOfSphere = radiusOfSphere * Math.PI * 4/3
+  const volumeOfSphere = radiusOfSphere * radiusOfSphere * radiusOfSphere * Math.PI * 4/3
 
   // output
-  document.getElementById('volume').innerHTML = 'Volume is: ' + volumeOfSphere.toFixed(2) + ' mm³'
+  document.getElementById('volume').innerHTML = 'Volume is: ' + volumeOfSphere.toFixed(2)
 }
